@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Anam</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffe0ec;
+            font-family: Arial, sans-serif;
+        }
+
+        #content {
+            display: none;
+            text-align: center;
+        }
+
+        img {
+            width: 350px;
+            max-width: 90%;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .quote {
+            margin-top: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        a {
+            font-size: 22px;
+            color: #d63384;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function openImage() {
+            let answer = confirm("Would you like to open this?");
+            if (answer) {
+                document.getElementById("link").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Clickable Link -->
+    <div id="link">
+        <a href="#" onclick="openImage()">👉 Click here</a>
+    </div>
+
+    <!-- Hidden Content -->
+    <div id="content">
+        <img src="friendship.jpg" alt="Friendship Image">
+        <div class="quote">
+            This is for you ❤️ Anam
+        </div>
+    </div>
+
+</body>
+</html>
+
